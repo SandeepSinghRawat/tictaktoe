@@ -19,7 +19,7 @@ function Player(props) {
   }
 
   return (
-    <li>
+    <li className={props.isActive ? 'active' : undefined}>
       <span className="player">
         {show}
         <span className= "player-symbol">{props.symbol}</span>
