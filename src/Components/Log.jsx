@@ -2,8 +2,8 @@
 
 function Log(props) {
   // const [log, setLog] = useState([]);
-  const logData =  props.log.map((data) => {
-    return <li>{data.value}</li>;
+  const logData =  props.logs.map((log) => {
+    return <li key={`${log.square.row}${log.square.col}`}>{log.player} selected {log.square.row}, {log.square.col}</li>;
   });
   return (
     <ol id="log">
